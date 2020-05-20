@@ -50,4 +50,10 @@ body{
   position: absolute;
   border-radius: 5px;
   background: #1C7CCC;
+  backface-visibility:hidden;
+  /* it will hide the front of the card when flipped (because of the 3d transform) */
+}
+.front-face{
+  transform:rotateY(180deg)
+/* just the front will flip when we rotate */
 }
