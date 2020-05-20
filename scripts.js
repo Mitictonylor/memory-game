@@ -3,7 +3,7 @@ const cards = document.querySelectorAll('.memory-card');
 
 function flipCard() {
   // toggle is ;ike a switch if i click once it takes the flip class  from the css
-  // if i click again it goes back to the previous class, so it's like an on and off
+  // if i click again it goes back to the previous class, so it's like an on and offgit
   this.classList.toggle('flip');
 }
 // to all the cards add this event listener
