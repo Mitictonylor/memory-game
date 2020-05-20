@@ -23,7 +23,14 @@ body{
   height: calc(33.333% -10px);
   margin: 5px;
   position: relative;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3)
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transform : scale(1)
+}
+.memory-card:active{
+  /* in memory card the scale is 1 to 1 , with active when we click on it, it will 
+  squeeze  and we added .2 second for the transiction */
+  transform: scale(0.97);
+  transition: transform .2s
 }
 .front-face,
 .back-face {
