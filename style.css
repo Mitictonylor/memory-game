@@ -27,8 +27,8 @@ body{
   transform : scale(1)
 }
 .memory-card:active{
-  /* in memory card the scale is 1 to 1 , with active when we click on it, it will 
-  squeeze  and we added .2 second for the transiction */
+  /* in memory card the scale is 1 to 1 , with active when we click on it, it will
+  shrink  and we added .2 second for the transiction */
   transform: scale(0.97);
   transition: transform .2s
 }
