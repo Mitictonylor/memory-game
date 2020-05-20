@@ -6,5 +6,5 @@ function flipCard() {
   // if i click again it goes back to the previous class, so it's like an on and offgit
   this.classList.toggle('flip');
 }
-// to all the cards add this event listener
+// to all the cards add this event listener, so as soon as clicked invoke flipcard
 cards.forEach(card => card.addEventListener('click', flipCard));

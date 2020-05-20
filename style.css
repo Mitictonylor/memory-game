@@ -14,6 +14,8 @@ body{
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  perspective: 1000px
+  /* how far is from the screen so it will look like 3d */
 }
 .memory-card{
   /* Each card width and height is calculated with calc() CSS function.
@@ -24,13 +26,18 @@ body{
   margin: 5px;
   position: relative;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  transform : scale(1)
+  transform : scale(1);
+  transform-style: preserve-3d;
+  /* to position them in the 3D space created in the parent,
+  instead of flattening it to the z = 0 plane (transform-style). */
+  transition: transform .5s;
+  /* a transition has to be applied to the transform property to produce the movement effect: */
 }
 .memory-card:active{
   /* in memory card the scale is 1 to 1 , with active when we click on it, it will
   shrink  and we added .2 second for the transiction */
   transform: scale(0.97);
-  transition: transform .2s
+  transition: transform .2s;
 }
 .memory-card.flip{
   transform: rotateY(180deg);
